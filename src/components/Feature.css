@@ -1,0 +1,101 @@
+
+.features {
+  padding: 100px 24px;
+  background: #ffffff;
+}
+
+.features-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Title */
+.features-title {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  color: #020617;
+  margin-bottom: 16px;
+}
+
+/* Subtitle */
+.features-subtitle {
+  font-size: 1.1rem;
+  color: #475569;
+  max-width: 640px;
+  margin: 0 auto 60px;
+  line-height: 1.7;
+}
+
+/* Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10%;
+}
+
+/* Card */
+.feature-card {
+  background: #ffffff;
+  padding: 36px 28px;
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  border-color: #6366f1;
+  box-shadow: 0 30px 50px rgba(79, 70, 229, 0.15);
+}
+
+/* Icon */
+.icon {
+
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Card Title */
+.feature-card h3 {
+    text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #020617;
+}
+
+/* Card Text */
+.feature-card p {
+    text-align: center;
+  
+  color: #475569;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+@media (max-width: 600px) {
+  .features {
+    padding: 80px 20px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    text-align: center;
+  }
+}
+  }
+}
